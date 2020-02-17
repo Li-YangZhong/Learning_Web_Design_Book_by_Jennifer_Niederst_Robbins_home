@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+
+        <input type="faketype">
+        <input type="">
+        <hr>
+
+        <input type="text" value="some text" size="">
+        <input type="text" value="some text" size="20" >
+        <input type="text" value="some text" size="10">
+        <input type="text" value="some text" size="5" disabled>
+        <hr>
+
+        <p>Official contest entry:<br>
+            <em>Tell us why you love the band. Five winners will get backstage
+                passes!</em><br>
+            <textarea name="contest_entry" placeholder="50 words or less" rows="5" cols="50" wrap="soft"
+                disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, dolorem eos ad doloribus accusamus exercitationem tenetur, libero assumenda repellendus quas distinctio consectetur qui sequi consequatur doloremque deserunt quaerat maxime sunt optio pariatur. Laborum temporibus a incidunt earum? In cum ratione vel adipisci tempora amet impedit, neque eaque aut, accusantium incidunt nam iure pariatur laborum dolor accusamus officiis debitis sint vitae? Nobis quidem, deleniti perspiciatis iste nisi sequi, veritatis quisquam culpa rem provident aspernatur labore, temporibus asperiores voluptatibus maiores voluptate? Optio reprehenderit, repellat officia eius explicabo excepturi. Odit culpa necessitatibus, inventore quisquam ea tempore esse quos, cumque maiores fugit fugiat adipisci!</textarea>
+        </p>
+        <hr>
+
+        <li><label for="form-pswd">Password:</label><br>
+            <input type="password" name="pswd" maxlength="12" id="form-pswd" autofocus></li>
+        <hr>
+        <input type="search">
+        Search field <br>
+        <input type="email">
+        Email address <br>
+        <input type="tel">
+        Telephone number <br>
+        <input type="url">
+        Location (URL)
+
+        <hr>
+
+        <input type="text" list="edulevel" name="education">
+        <datalist id="edulevel">
+            <option value="High School">
+            <option value="Bachelors Degree">
+            <option value="Masters Degree">
+            <option value="PhD">
+        </datalist>
+
+
+        <hr>
+
+        <p>
+            <input type="submit" value="提交">
+            <input type="reset" value="重置">
+        </p>
+
+        <hr>
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input/image -->
+        <input type="image" src="https://interactive-examples.mdn.mozilla.net/media/examples/login-button.png" alt="注册">
+
+        <hr>
+
+        <input type="button">
+
+        <hr>
+
+        <button>A Button Element</button>
+
+        <hr>
+
+        <p>How old are you?</p>
+        <ol>
+            <li><input type="radio" name="age" value="under24"> under
+                24</li>
+            <li><input type="radio" name="age" value="25-34"> 25 to 34</li>
+            <li><input type="radio" name="age" value="35-44"> 35 to 44</li>
+            <li><input type="radio" name="age" value="over45" checked> 45+</li>
+        </ol>
+
+        <hr>
+
+        <p>What type of music do you listen to?</p>
+        <ul>
+            <li><input type="checkbox" name="genre" value="punk" checked> Punk
+                rock</li>
+            <li><input type="checkbox" name="genre" value="indie" checked> Indie
+                rock</li>
+            <li><input type="checkbox" name="genre" value="hiphop"> Hip Hop</li>
+            <li><input type="checkbox" name="genre" value="rockabilly">
+                Rockabilly</li>
+        </ul>
+
+        <hr>
+
+        <p><input type="checkbox" name="OptIn" value="yes" checked> Yes, send me news
+            and special promotions by email.</p>
+
+        <hr>
+
+        <p>What is your favorite 80s band?
+            <select name="EightiesFave">
+                <option>The Cure</option>
+                <option>Cocteau Twins</option>
+                <option>Tears for Fears</option>
+                <option>Thompson Twins</option>
+                <option value="EBTG">Everything But the Girl</option>
+                <option>Depeche Mode</option>
+                <option>The Smiths</option>
+                <option>New Order</option>
+            </select>
+        </p>
+        <p>What 80s bands did you listen to?
+            <select name="EightiesBands" size="6" multiple>
+                <option>The Cure</option>
+                <option>Cocteau Twins</option>
+                <option selected>Tears for Fears</option>
+                <option selected>Thompson Twins</option>
+                <option value="EBTG">Everything But the Girl</option>
+                <option>Depeche Mode</option>
+                <option>The Smiths</option>
+                <option>New Order</option>
+            </select>
+        </p>
+        <hr>
+
+        <select name="icecream" size="7" multiple>
+            <optgroup label="traditional">
+                <option selected>vanilla</option>
+                <option>chocolate</option>
+            </optgroup>
+            <optgroup label="fancy">
+                <option seleted>Super praline</option>
+                <option>Nut surprise</option>
+                <option>Candy corn</option>
+            </optgroup>
+        </select>
+        <hr>
+
+        <select name="pizzas" size="3" multiple>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+        </select>
+
+    </form>
+
+    <hr>
+
+    <form action="/client.php" method="POST" enctype="multipart/form-data">
+        <label>Send a photo to be used as your online icon <em>(optional)
+            </em><br>
+            <input type="file" name="photo" multiple accept="video"></label>
+
+        <input type="hidden" name="success-link" value="http://www.example.com/
+thankyou.html">
+        <br>
+
+        <input type="date" name="name" value="2017-01-14">
+
+        <br>
+
+        <input type="time" name="name" value="03:13:00">
+
+        <br>
+
+        <input type="datetime-local" name="name" value="2017-01-14T03:13:00">
+
+        <br>
+
+        <input type="month" name="name" value="2017-01">
+        <br>
+
+        <input type="week" name="name" value="2017-W2">
+
+        <hr>
+
+        <label>Number of guests <input type="number" name="guests" min="1" max="6"></label>
+        <br>
+        <label>Number of guests <input type="number" name="guests" min="1"></label>
+        <br>
+        <label>Number of guests <input type="number" name="guests" max="6"></label>
+        <br>
+
+        <label>Number of guests <input type="number" name="guests" min="1" max="6" step="3"></label>
+        <br>
+        <label>Number of guests <input type="number" name="guests" min="1" max="6" step="0.1"></label>
+        <br>
+        <label>Number of guests <input type="number" name="guests" min="1" max="6" step="any"></label>
+
+        <label>Satisfaction (0 to 10) <input type="range" name="satisfaction" min="0" max="10" step="1"></label>
+        <br>
+        <label>Satisfaction (0 to 10) <input type="range" name="satisfaction" min="0" step="1"></label>
+        <br>
+        <label>Satisfaction (0 to 10) <input type="range" name="satisfaction" max="10" step="1"></label>
+
+        <br>
+
+        <label>Your favorite color: <input type="color" name="favorite">
+        </label>
+
+        <br>
+
+        Percent downloaded: <progress max="100" id="fave" value="60">0</progress>
+
+        <br>
+
+        <meter min="0" max="100" name="volume">60%</meter>
+
+        <br>
+
+        <ul>
+            <li><label><input type="checkbox" name="genre" value="punk"> Punk
+                    rock</label></li>
+            <li><label><input type="checkbox" name="genre" value="indie"> Indie
+                    rock</label></li>
+            <li><label><input type="checkbox" name="genre" value="hiphop"> Hip
+                    Hop</label></li>
+            <li><label><input type="checkbox" name="genre" value="rockabilly">
+                    Rockabilly</label></li>
+        </ul>
+
+
+
+
+    </form>
+
+    <form onsubmit="return false" oninput="o.value = a.valueAsNumber + b.valueAsNumber">
+        <fieldset>
+            <legend>加法</legend> <!-- assigns a caption to a fieldset -->
+            <input name=a type=number step=any>
+            + <input name=b type=number step=any> =
+            <output name=o for="a b"></output>
+
+        </fieldset>
+
+    </form>
+    <br>
+    <form onsubmit="return false" oninput="o.value = a.valueAsNumber - b.valueAsNumber">
+
+        <fieldset>
+
+            <legend>减法</legend>
+            <input name=a type=number step=any>
+            - <input name=b type=number step=any> =
+            <output name=o for="a b"></output>
+        </fieldset>
+
+    </form>
+
+    <form action="">
+        <label for="form-login-username">Login account</label>
+        <input type="text" name="login" id="form-login-username">
+        <label for="form-login-password">Password</label>
+        <input type="password" name="password" id="form-login-password">
+
+    </form>
+
+    <br>
+    
+    <form action="">
+        <fieldset>
+            <legend>Mailing List Sign-up</legend>
+            <ul>
+                <li><label>Add me to your mailing list <input type="radio" name="list" value="yes" checked></label></li>
+                <li><label>No thanks <input type="radio" name="list" value="no">
+                    </label></li>
+            </ul>
+        </fieldset>
+        <fieldset disabled>
+            <legend>Customer Information</legend>
+            <ul>
+                <li><label>Full name: <input type="text" name="fullname"></label>
+                </li>
+                <li><label>Email: <input type="text" name="email"></label></li>
+                <li><label>State: <input type="text" name="state"></label></li>
+            </ul>
+        </fieldset>
+
+    <br>
+
+    <button menu="This is a button" type="button">A Button</button>
+    </form>
+</body>
+
+</html>

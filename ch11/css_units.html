@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        h1 {
+            border: 1px solid #000;
+        }
+
+        #absolute-unit-px {
+            font-size: 38px;
+        }
+
+        #absolute-unit-in {
+            font-size: 0.394in;
+        }
+
+        #absolute-unit-mm {
+            font-size: 10mm;
+        }
+
+        #absolute-unit-cm {
+            font-size: 1cm;
+        }
+
+        #absolute-unit-q {
+            font-size: 40q;
+        }
+
+        #absolute-unit-pt {
+            font-size: 28.346pt;
+        }
+
+        #absolute-unit-pc {
+            font-size: 2.362pc;
+        }
+
+        #relative-unit-rem {
+            font-size: 1rem;
+        }
+    </style>
+
+
+</head>
+
+<body style="margin:0;">
+    <h2 style="background:yellow; ">Absolute Unit:</h1>
+        <h1 id="absolute-unit-px">CSS UNIT: px (1px=1/96inch in CSS3; 1cm=37.795px)</h1>
+        <h1 id="absolute-unit-in">CSS UNIT: in (1cm equals about 0.394in)</h1>
+        <h1 id="absolute-unit-mm">CSS UNIT: mm (1cm equals 10mm)</h1>
+        <h1 id="absolute-unit-cm">CSS UNIT: cm (1cm)</h1>
+        <h1 id="absolute-unit-q">CSS UNIT: q (1q=¼ millimeter;1cm=40q)</h1>
+        <h1 id="absolute-unit-pt">CSS UNIT: pt (1pt=1/72inch;1cm=28.346pt)</h1>
+        <h1 id="absolute-unit-pc">CSS UNIT: pc(1pc=1/6inch;1cm=2.362pc)</h1>
+
+        <h2 style="background:yellow; ">Relative Unit:</h1>
+            <h1 id="relative-unit-rem">CSS UNIT: rem(1rem=font size of the root element(html), about 16px;)</h1>
+
+            <!-- The trick to working with ems is to remember they are always relevant to
+the current font size of the element. To borrow an example from Eric Meyer
+and Estelle Weyl’s CSS: The Definitive Guide (O’Reilly), if you set a 2em left
+margin on an h1, h2, and p, those elements will not line up nicely because the
+em units are based on their respective element’s sizes -->
+
+            <h1>
+                <p style="font-size: 1em;">element p within h1 element, font size set to 1em.</p>
+            </h1>
+            <h1>
+                <p>element p within h1 element, font size not set.</p>
+            </h1>
+            <h2>
+                <p>element p within h2 element, font size not set.</p>
+                <p style="font-size: 1em;">element p within h2 element, font size set to 1em.</p>
+                <p style="font-size: 2em;">element p within h2 element, font size set to 2em.</p>
+
+            </h2>
+            <h3>
+                <p style="font-size: 1em;">element p within h3 element, font size set to 1em.</p>
+                <p>element p within h3 element, font size not set.</p>
+            </h3>
+            <h4>
+                <p style="font-size: 1em;">element p within h4 element, font size set to 1em.</p>
+                <p>element p within h4 element, font size not set.</p>
+            </h4>
+            <h5>
+                <p style="font-size: 1em;">element p within h5 element, font size set to 1em.</p>
+                <p>element p within h5 element, font size not set.</p>
+            </h5>
+
+            <div>
+                    <h2 style="background:yellow; ">以下4行文字的总高度等于viewport的高度</h1>
+                    <p style="font-size: 20vh;margin:0; padding:0;">font-size:25vh</p>
+                    <p style="font-size: 20vh;margin:0; padding:0;">font-size:25vh</p>
+                    <p style="font-size: 20vh;margin:0; padding:0;">font-size:25vh</p>
+                    <p style="font-size: 20vh;margin:0; padding:0;">font-size:25vh</p>
+                    <p style="font-size: 20vh;margin:0; padding:0;">font-size:25vh</p>
+
+            </div>
+
+            <div>
+                <h2 style="background:yellow; ">以下5个字母的总宽度等于viewport的宽度</h1>
+
+                <p style="font-size: 20vw; display:inline; margin:0; padding:0;">M</p>
+                <p style="font-size: 20vw; display:inline; margin:0; padding:0;">M</p>
+                <p style="font-size: 20vw; display:inline; margin:0; padding:0;">M</p>
+                <p style="font-size: 20vw; display:inline; margin:0; padding:0;">M</p>
+                <p style="font-size: 20vw; display:inline; margin:0; padding:0;">M</p>
+            </div>
+
+
+
+
+
+</body>
+
+</html>

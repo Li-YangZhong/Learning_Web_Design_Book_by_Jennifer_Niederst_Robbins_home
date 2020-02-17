@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        img {
+            width: 80px; 
+        }
+        img[title] {border: 3px solid;}
+        img[title="first grade"] {border: 3px solid red;}
+        img[title~="grade"] {background-color: lightcyan;}
+
+        [hreflang|="en"] {border: 3px solid;}
+        img[src^="images/"] {border-style: dashed;}
+
+        img[src$="3845"] {border-bottom: 3px solid yellow;}
+
+        img[alt*="c"] {border-top-style: none;}
+        div#special {
+            padding: 50px;
+            border: 10px dashed;
+            background-image: url(../images/plaid.png);
+            margin-bottom: 50px;
+            /* background-repeat: repeat; */
+            /* background-repeat: space; */
+            /* background-repeat: round; */
+            /* background-repeat: no-repeat; */
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+            /* background-position: left bottom; */
+            /* background-position: right center; */
+            /* background-position: right; */
+            /* background-position: 200px 50px; */
+            /* background-position: 25% 100%; */
+            /* background-position: right 50px bottom 50px; */
+            /* background-origin: content-box; */
+            background-position: right bottom;
+            /* background-repeat: repeat-x; */
+            /* background-origin: padding-box; */
+            background-origin: padding-box;
+            /* background-size: auto 50%; */
+            /* background-size:f cover; */
+            /* background-size:auto; */
+        }
+        div#notspecial {
+            padding: 50px;
+            border: 10px dashed;
+            background-image: url(../images/plaid.png);
+            background-clip: border-box;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+
+    <img src="images/blackgoose.png" alt="abcd" title="a title">
+    <img src="images/blackgoose.png" alt="cdef" title="first grade">
+    <img src="images/blackgoose.png" alt="cdefgh" title="second grade">
+    <img src="images/blackgoose.png" alt="gh" >
+    <img src="https://vignette.wikia.nocookie.net/fanfiction/images/8/8f/Exclamation_point.JPG/revision/latest/top-crop/width/200/height/150?cb=20130215203845" alt="" >
+    <hr>
+    <a href="#" hreflang="en-us">a link</a>
+    <a href="#" hreflang="en-in">a link</a>
+    <a href="#" hreflang="en-au-tas">a link</a>
+    <a href="#" hreflang="cn">a link</a>
+    <hr>
+    
+    <div id="special" style="width: 50%; height: 50%;">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt dolore aliquid incidunt laudantium ma Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi explicabo minima praesentium rem aliquam soluta omnis nam exercitationem voluptate laudantium iste modi architecto non ut corporis eum inventore quasi, blanditiis ducimus? Quasi libero deleniti quia, similique eius ex dolores nam. gni nesciunt, ducimus quam ipsam architecto blanditiis a at ratione asperiores consectetur minus neque! Nam officia, et, assumenda, eaque maxime dolor esse soluta dolores expedita explicabo numquam.</p>
+    </div>
+    <div id="notspecial" style="width: 50%; height: 50%;">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt dolore aliquid incidunt laudantium magni nesciunt, ducimus quam ipsam architecto blanditiis a at ratione asperiores consectetur minus neque! Nam officia, et, assumenda, eaque maxime dolor esse soluta dolores expedita explicabo numquam.</p>
+    </div>
+
+</body>
+</html>

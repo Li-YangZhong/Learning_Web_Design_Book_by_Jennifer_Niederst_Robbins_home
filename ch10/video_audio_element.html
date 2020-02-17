@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+
+    <link rel="stylesheet" href="css/mejs-site.css">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+</head>
+
+<body>
+    <h1 style="font-family: Montserrat;">Video and Audio Element</h1>
+    <video src="windtunnel.mp4" poster="poster.jpg" width="640" height="480" controls></video>
+
+    <hr>
+
+
+    <mediaelementwrapper>
+        <video id="video" width="640" height="480" controls
+            poster="https://tse4-mm.cn.bing.net/th?id=OIP.Wts03FcuplrvlJkDJuHGOQHaFj&w=267&h=200&c=7&o=5&pid=1.7"
+            playsinline webkit-playsinline class="mejs__player">
+            <source src="windtunnel.webm" type="video/webm">
+            <source src="windtunnel.mp4" type="video/mp4">
+            <source src="windtunnel.ogg" type="video/ogg">
+            <a href="#">Download the MP4 of the clip.</a>
+        </video>
+
+    </mediaelementwrapper>
+
+
+
+    <hr>
+
+    <p>Play "Roar of T-rex" provided by MDN</p>
+    <audio id="whiterabbits" controls preload="auto">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/examples/t-rex-roar.mp3" type="audio/mp3">
+
+        <p>Download this audio clip:</p>
+        <ul>
+            <li><a href="#">MP3</a></li>
+            <li><a href="#">Ogg Vorbis</a></li>
+        </ul>
+    </audio>
+</body>
+
+</html>

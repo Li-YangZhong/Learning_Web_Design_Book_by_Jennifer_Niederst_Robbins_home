@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:first-child {
+  color: lime;
+  background-color: black;
+  padding: 5px;
+}
+
+li:first-child {
+  color: red;
+  font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <p>This text is selected!</p>
+        <p>This text isn't selected.</p>
+      </div>
+      
+      <div>
+        <h2>This text isn't selected: it's not a `p`.</h2>
+        <p>This text isn't selected.</p>
+      </div>
+
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3
+          <ul>
+            <li>Item 3.1</li>
+            <li>Item 3.2</li>
+            <li>Item 3.3</li>
+          </ul>
+        </li>
+      </ul>
+</body>
+</html>

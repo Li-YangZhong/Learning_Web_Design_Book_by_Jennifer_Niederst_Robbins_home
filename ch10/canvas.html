@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Hello Canvas!</title>
+<script src="modernizr-1.6.min.js"></script>
+<script type="text/javascript">
+window.addEventListener('load', eventWindowLoaded, false);	
+function eventWindowLoaded() {
+
+	canvasApp();
+	
+}
+
+function canvasSupport () {
+  	return Modernizr.canvas;
+}
+
+
+function canvasApp(){
+
+	
+
+	if (!canvasSupport()) {
+			 return;
+  	}else{
+	    var theCanvas = document.getElementById('my_first_canvas');
+	    var my_canvas = theCanvas.getContext('2d');
+	}
+	
+	
+	drawPicture();
+
+    function drawPicture() {
+
+    my_canvas.strokeRect(0,0,200,225) // to start, draw a border around the canvas
+
+    //draw face
+    my_canvas.beginPath();
+    my_canvas.arc(100, 100, 75, (Math.PI/180)*0, (Math.PI/180)*360, false); // circle dimensions
+    my_canvas.strokeStyle = "black"; // circle outline is black
+    my_canvas.lineWidth = 3; // outline is three pixels wide
+    my_canvas.fillStyle = "yellow"; // fill circle with yellow
+    my_canvas.stroke(); // draw circle
+    my_canvas.fill(); // fill in circle
+    my_canvas.closePath();
+    
+    // now, draw left eye
+    my_canvas.fillStyle = "black"; // switch to black for the fill
+    my_canvas.beginPath();
+    my_canvas.arc(65, 70, 10, (Math.PI/180)*0, (Math.PI/180)*360, false); // circle dimensions
+    my_canvas.stroke(); // draw circle
+    my_canvas.fill(); // fill in circle
+    my_canvas.closePath();
+
+    // now, draw right eye
+    my_canvas.beginPath();
+    my_canvas.arc(135, 70, 10, (Math.PI/180)*0, (Math.PI/180)*360, false); // circle dimensions
+    my_canvas.stroke(); // draw circle
+    my_canvas.fill(); // fill in circle
+    my_canvas.closePath();
+
+    // draw smile
+    my_canvas.lineWidth = 6; // switch to six pixels wide for outline
+    my_canvas.beginPath();
+    my_canvas.arc(99, 120, 35, (Math.PI/180)*0, (Math.PI/180)*-180, false); // semicircle dimensions
+    my_canvas.stroke();
+    my_canvas.closePath();
+
+    // Smiley Speaks!
+    my_canvas.fillStyle = "black"; // switch to black for text fill
+    my_canvas.font         = '20px _sans'; // use 20 pixel sans serif font
+    my_canvas.fillText  ("Hello Canvas!", 45, 200); // write text
+}
+
+}
+
+
+</script> 
+
+</head>
+<body>
+<div style="position: absolute; top: 50px; left: 50px; border: 1px dotted blue;">
+<canvas id="my_first_canvas" width="200" height="225">
+  The content you put here will show up if your rendering engine doesn't support the &lt;canvas&gt; element.
+</canvas>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>descendant selector</title>
+    <style>
+    div p, article p {
+        background-color: pink;
+        color: green;
+    }
+
+    article p span {
+        color: red;
+    }
+
+    /* li#sleestak {
+        color: olive;
+    } */
+    #sleestak {
+        color: olive;
+    }
+
+    #sleestak a {
+        color: purple;
+    }
+    </style>
+</head>
+<body>
+    <p>A pagragraph contained inside body tag</p>
+
+    <div>
+        <p>a paragraph container inside body>div</p>
+    </div>
+<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, velit optio? Reiciendis assumenda similique odio nulla in, culpa earum error!</span>
+    <article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iste ipsa, dolorum enim eius mollitia! Neque saepe culpa max <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam qui itaque nobis nostrum velit asperiores error ut voluptatem obcaecati dolore.</span> ime sed quis eius modi sint, veniam, a animi deleniti dignissimos deserunt.</p>
+    </article>
+
+    <ul>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, at.</li>
+        <li id="sleestak">Earum, pariatur inventore! Provident dolores dolor assumenda magni beata <a href="#">a link</a> e quae.</li>
+        <li>Tempore necessitatibus ad veniam dicta odio, quo <a href="#">another link</a> harum optio alias?</li>
+        <li>Possimus nobis blanditiis facilis sequi iure minus perferendis ratione placeat?</li>
+        <li>Corporis quod rerum eaque architecto quia ipsam laudantium nobis repudiandae!</li>
+    </ul>
+</body>
+</html>

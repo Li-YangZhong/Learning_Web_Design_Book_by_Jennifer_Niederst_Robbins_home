@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*         
+        .example :nth-child(5) {
+            background: #ffdb3a;
+        }
+
+        .example p:nth-of-type(odd) {
+            background: #ffdb3a;
+        }
+
+        .example div:nth-of-type(2) {
+            background-color: red;
+
+        }
+
+        .example :nth-last-child(1) {
+            background: #a6cae7;
+        }
+
+        .example p:nth-last-of-type(1) {
+            background: green;
+        } */
+
+        p:first-child() {
+            border: 3px solid purple;
+        }
+
+        .example :first-of-type() {
+            border: 3px solid orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="example">
+        <p>This is a <em>paragraph</em>.</p>
+        <p>This is a <em>paragraph</em>.</p>
+        <p>This is a <em>paragraph</em>.</p>
+        <div>This is a <em>divider</em>.</div>
+        <div>This is a <em>divider</em>.</div> <!-- Element to select -->
+        <p>This is a <em>paragraph</em>.</p>
+        <p>This is a <em>paragraph</em>.</p>
+        <div>This is a <em>divider</em>.</div>
+        <p>This is a <em>paragraph</em>.</p>
+        <div>This is a <em>divider</em>.</div>
+    </div>
+</body>
+
+</html>

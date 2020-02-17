@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* A child selector is similar to a descendant selector, but it targets only the direct
+children of a given element. */
+        p > em {font-weight: bold;}
+
+/* A next-sibling selector targets an element that comes directly after another element
+with the same parent.  */
+h1 + p {font-style: italic;}
+/* A subsequent-sibling selector selects an element that shares a parent with the
+specified element and occurs after it in the source order.  */
+h1 ~ h2 {font-weight: normal;}
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <p><em>Lorem ipsum dolor sit amet.</em></p>
+
+    <p><a href="#"><em>Lorem ipsum dolor sit amet.</em></a></p>
+
+    <h1>a h1 element</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perspiciatis quos consequatur sapiente optio nobis aperiam quisquam ratione dolorum recusandae.</p>
+    <p>Officia officiis voluptatibus recusandae odio quam numquam, tenetur dolores incidunt iure atque? Architecto qui dolores aut repellendus. Ut, ducimus iste!</p>
+    <p>Modi, illum quam culpa et iure nihil. Nulla amet rem tenetur cum incidunt culpa tempore in officia reprehenderit! Atque, alias.</p>
+
+    <div>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, fugit?</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, accusantium.</h2>
+    </div>
+
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, expedita.</h1>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, aperiam?</h3>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, minus.</h2>
+
+    
+</body>
+</html>

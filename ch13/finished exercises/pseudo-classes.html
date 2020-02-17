@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        a:link {
+            color: green;
+        }
+
+        a:visited {
+            color: gray;
+        }
+        a:hover {
+            color: maroon;
+            background-color: #ffd9d9;
+            text-decoration: underline;
+        }
+        a:active {
+            color: yellow;
+            background-color: blue;
+        }
+
+        input:focus {
+            background-color: yellow;
+        }
+        #empty:empty {
+            border: 1px solid yellowgreen;
+            background-color: yellow;
+            height: 20px;
+        }
+
+        /* #empty {
+            border: 1px solid green;
+            background-color: green;
+            height: 20px;
+        } */
+
+        li:last-of-type {
+            background-color: yellow;
+        }
+        li:first-child {
+            color: red;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="https://www.baidu.com">a link</a>
+    <a href="#">another link</a>
+    <a href="##">third link</a>
+
+    <input type="text"><input type="text">
+    <div id="empty"></div>
+
+    <ul>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+    </ul>
+</body>
+
+</html>

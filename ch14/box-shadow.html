@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.box {
+            width: 160px;
+            height: 160px;
+            border: 1px solid #000;
+            background-color: rgb(61, 230, 137);
+            margin: 10px;
+        }
+        div#A {
+            box-shadow: 6px 6px gray;
+        }
+        div#B {
+            box-shadow: 6px 6px 5px gray;
+        }
+        div#C {
+            background-color: transparent;
+            box-shadow: 6px 6px 5px 10px gray;
+        }
+        div#D {
+            box-shadow: inset 6px 6px 5px gray;
+        }
+        div#E {
+            box-shadow: inset 6px 6px 5px gray, 6px 6px 5px red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">No box-shadow applied</div>
+    <div class="box" id="A">A</div>
+    <div class="box" id="B">B</div>
+    <div class="box" id="C">C:my background-color is set to transparent</div>
+    <div class="box" id="D">D</div>
+    <div class="box" id="E">E</div>
+</body>
+</html>

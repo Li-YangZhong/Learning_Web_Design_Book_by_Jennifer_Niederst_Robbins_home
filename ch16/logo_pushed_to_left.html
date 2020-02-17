@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            display: flex;
+            align-items: center;
+            background-color: #00af8f;
+            list-style: none;
+            /* removes bullets */
+            padding: .5em;
+            margin: 0;
+        }
+
+        li {
+            margin: 0 1em;
+        }
+
+        li.logo-to-left {
+            margin-right: auto;
+        }
+        li.logo-to-right {
+            margin-left: auto;
+        }
+        
+        li.logo-to-middle {
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li class="logo-to-left"><img src="logo.png" alt="LoGoCo"></li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Shop</li>
+        <li>Contact</li>
+    </ul>
+
+    <ul>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Shop</li>
+        <li>Contact</li>
+        <li class="logo-to-right"><img src="logo.png" alt="LoGoCo"></li>
+    </ul>
+    
+    <ul>
+        <li>About</li>
+        <li>Blog</li>
+        <li class="logo-to-middle"><img src="logo.png" alt="LoGoCo"></li>
+        <li>Shop</li>
+        <li>Contact</li>
+    </ul>
+</body>
+
+</html>

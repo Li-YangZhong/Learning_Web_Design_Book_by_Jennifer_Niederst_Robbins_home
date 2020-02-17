@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p:nth-child(1):first-line {
+            color: red;
+            letter-spacing: 9px;
+        }
+
+        p:nth-child(1):first-letter {
+            border: 1px solid #000;
+            font-size: 300%;
+            color: orange;
+        }
+
+        p.warning::before {
+            content: url(../images/exclamation.jpg);
+            margin-right: 6px;
+        }
+
+        p.warning::after {
+            content: " Thank you.";
+            color: red;
+            text-decoration: underline;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi ullam est, deleniti eligendi sunt pariatur
+        perferendis nihil ad. Sint temporibus minima fuga laudantium aspernatur facere eligendi cumque modi in deleniti
+        magnam, doloremque totam consectetur quidem voluptate reiciendis, aut ipsum! Molestiae voluptate obcaecati
+        adipisci quos deleniti eum voluptates blanditiis similique atque!</p>
+
+    <p class="warning">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod possimus facilis quam aliquid
+        culpa provident magni libero repellendus, maxime quae!</p>
+</body>
+
+</html>
