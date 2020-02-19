@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #layout {
+            color: white;
+            font-size: 2rem;
+            display: grid;
+            grid-template-rows: [header-start] 100px [content-start] 400px [footer-start] 100px;
+            grid-template-columns: [ads] 200px [main] 1fr [links] 200px;
+            grid-template-areas:
+                "header header header"
+                "ads main links"
+                "footer footer footer";
+        }
+
+        /* #one {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        } */
+        /* #one {
+            grid-row-start: header-start;
+            grid-row-end: header-end;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        } */
+        /* #one {
+            grid-row-start: header-start;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        } */
+        /* #one {
+            grid-row-start: header-start;
+            grid-column-start: 1;
+            grid-column-end: span 3;
+        } */
+        #one {
+            grid-row-start: header-start;
+            grid-column-start: span 3;
+            grid-column-end: -1;
+        }
+
+        #four {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+
+        #layout div:nth-of-type(1) {
+            background-color: rgb(247, 8, 8);
+        }
+
+        #layout div:nth-of-type(2) {
+            background-color: orange;
+        }
+
+        #layout div:nth-of-type(3) {
+            background-color: green;
+        }
+
+        #layout div:nth-of-type(4) {
+            background-color: blue;
+        }
+
+        #layout div:nth-of-type(5) {
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="layout">
+        <div id="one">One</div>
+        <div id="two">Two</div>
+        <div id="three">Three</div>
+        <div id="four">Four</div>
+        <div id="five">Five</div>
+    </div>
+</body>
+
+</html>
