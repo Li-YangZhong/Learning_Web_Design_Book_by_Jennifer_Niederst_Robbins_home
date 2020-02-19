@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header,
+        footer {
+            background-color: rgb(41, 44, 224);
+            padding: 0.5em 0.25em;
+            color: white;
+        }
+
+        header {
+            font-size: 2em;
+        }
+
+        #contact {
+            background-color: orange;
+        }
+
+        #news {
+            background-color: green;
+        }
+
+        article {
+            background-color: pink;
+        }
+
+        main {
+            display: flex;
+            
+        }
+        article, #news, #contact {
+            padding: 0 0.25em;
+        }
+        article {
+            flex: 1 1 50%;
+            order: 2;
+        }
+
+        #news {
+            flex: 1 1 25%;
+            order: 3;
+        }
+
+        #contact {
+            flex: 1 1 25%;
+            order: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Hip & Happenin' Headline</header>
+    <main>
+        <article>
+            <h2>Where It's At</h2>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus molestiae asperiores animi. Quibusdam
+            eveniet excepturi eaque blanditiis exercitationem laborum? Quae nobis voluptate natus aliquid temporibus
+            recusandae dolorum officiis nulla saepe qui, architecto nemo iure molestias iste fugit vel voluptatem
+            adipisci inventore numquam, debitis quo expedita. Natus expedita quod sunt nostrum.
+        </article>
+
+        <aside id="news">
+            <h2>News</h2>
+        </aside>
+
+        <aside id="contact">
+            <h2>Contact</h2>
+            <aside>
+    </main>
+    <footer>the small print<footer>
+</body>
+
+</html>
