@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #littlegrid {
+display: grid;
+grid-template-columns: 200px 200px;
+grid-template-rows: 200px 200px;
+grid-auto-columns: 100px;
+grid-auto-rows: 100px;
+}
+
+#A {
+grid-row: 1 / 2;
+grid-column: 2 / 3;
+}
+#B {
+grid-row: 3 / 4;
+grid-column: 5 / 6;
+}
+    </style>
+</head>
+
+<body>
+    <div id="littlegrid">
+        <div id="A">A</div>
+        <div id="B">B</div>
+    </div>
+</body>
+
+</html>

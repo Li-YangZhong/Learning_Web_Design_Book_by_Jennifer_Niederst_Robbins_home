@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #container {
+            width: 600px;
+            height: 500px;
+            border: 1px solid #000;
+            display: grid;
+            grid-auto-flow: row;
+            grid: repeat(3, 100px) / repeat(4, 100px) ;
+            /* align-content: start; */
+            /* align-content: end; */
+            /* align-content: center; */
+            /* align-content: space-around; */
+            /* align-content: space-between; */
+            justify-content: space-evenly;
+        }
+
+        .one {
+            background-color: rgb(189, 27, 27);
+      
+        }
+        .two {
+            background-color: orange;
+            
+        }
+        .three {
+            background-color: greenyellow;
+           
+        }
+        .four {
+            background-color: blue;
+            
+        }
+        .five {
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="one">One</div>
+        <div class="two">Two</div>
+        <div class="three">Three</div>
+        <div class="four">Four</div>
+        <div class="five">Five</div>
+        <div class="one">Six</div>
+        <div class="two">Seven</div>
+        <div class="three">Eight</div>
+        <div class="four">Nine</div>
+        <div class="five">Ten</div>
+        <div class="one">Eleven</div>
+        <div class="two">Twelve</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #container {
+            display: grid;
+            grid-auto-flow: column;
+            grid: 200px / repeat(4, 1fr) ;
+        }
+
+        #start {
+            background-color: red;
+            align-self: start;
+        }
+        #end {
+            background-color: orange;
+            align-self: end;
+        }
+        #center {
+            background-color: greenyellow;
+            align-self: center;
+        }
+        #stretch {
+            background-color: blue;
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="start">start</div>
+        <div id="end">end</div>
+        <div id="center">center</div>
+        <div id="stretch">stretch</div>
+    </div>
+</body>
+</html>
