@@ -50,8 +50,10 @@ h1 {
 #timing_box {
   width: 600px;
   background-color: #c6de89;
+  /* background-color: rgba(124, 211, 25, 0.342); */
   padding: 0;
   margin: 0;
+  /* border-radius: 45%; */
   }
 p.tf {
   background-color: #fff;
@@ -77,6 +79,17 @@ p.tf {
 	-o-transition-timing-function: ease;
 	-ms-transition-timing-function: ease;
 	transition-timing-function: ease;
+}
+
+#ease-shortcut:hover {
+	background-color: red;
+	transition:background-color 2s ease 1s
+	
+}
+#ease-delay {
+
+	transition-timing-function: ease;
+	transition-delay: 1s;
 }
 #linear {
 	-webkit-transition-timing-function: linear;
@@ -113,6 +126,10 @@ p.tf {
 	-ms-transition-timing-function: steps(4,end);
 	transition-timing-function: steps(4,end);	
 }
+#steps-func-start{
+
+	transition-timing-function: steps(4,start);	
+}
 #step-start {
 	-webkit-transition-timing-function: step-start;
 	-moz-transition-timing-function: step-start;
@@ -120,12 +137,21 @@ p.tf {
 	-ms-transition-timing-function: step-start;
 	transition-timing-function: step-start;	
 }
+#step-1-start {
+
+	transition-timing-function: steps(1, start);	
+}
 #step-end {
 	-webkit-transition-timing-function: step-end;
 	-moz-transition-timing-function: step-end;
 	-o-transition-timing-function: step-end;
 	-ms-transition-timing-function: step-end;
 	transition-timing-function: step-end;	
+
+}
+#step-1-end {
+
+	transition-timing-function: steps(1, end);	
 
 }
 /* end FIGURE 18-3 */
@@ -142,20 +168,8 @@ p.tf {
 	border-radius: 1em;
 	background-color: mediumblue;
 	color: #fff;
-    -webkit-transition-property: background-color, color, letter-spacing; 
-    -moz-transition-property: background-color color, letter-spacing; 
-    -0-transition-property: background-color, color, letter-spacing; 
-    -ms-transition-property: background-color, color, letter-spacing; 
     transition-property: background-color, color, letter-spacing; 
-    -webkit-transition-duration: 0.3s, 2s, 0.3s; 
-    -moz-transition-duration: 0.3s, 2s, 0.3s; 
-    -0-transition-duration: 0.3s 2s, 0.3s; 
-    -ms-transition-duration: 0.3s, 2s, 0.3s; 
     transition-duration: 0.3s, 2s, 0.3s; 
-    -webkit-transition-timing-function: ease-out, ease-in, ease-out; 
-    -moz-transition-timing-function: ease-out, ease-in, ease-out;
-    -0-transition-timing-function: ease-out, ease-in, ease-out;
-    -ms-transition-timing-function: ease-out, ease-in, ease-out;
     transition-timing-function: ease-out, ease-in, ease-out; 
 		
 }
@@ -163,6 +177,23 @@ p.tf {
 	background-color: red;
 	letter-spacing: 3px;
 	color: black;
+}
+
+#fig4 a#smooth-all {
+	display: block;
+	text-decoration:none;
+	text-align: center;
+	padding: .5em 1em;
+	width: 10em;
+	border-radius: 1em;
+	background-color: lightblue;
+	color: #fff;
+	transition: all 0.2s linear;
+}
+#fig4 a#smooth-all:hover {
+	width: 20em;
+	border-radius: 0.5em;
+	background-color: darkblue;
 }
 /* end figure 18-4 */
 
