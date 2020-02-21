@@ -30,19 +30,19 @@ h1 {
 	border-radius: 1em;
 	background-color: mediumblue;
 	color: #fff;
-    -webkit-transition-property: background-color; 
+    /* -webkit-transition-property: background-color; 
     -moz-transition-property: background-color; 
     -0-transition-property: background-color; 
-    -ms-transition-property: background-color; 
-    transition-property: background-color; 
-    -webkit-transition-duration: 0.3s; 
+    -ms-transition-property: background-color;  */
+    transition-property: width; 
+    /* -webkit-transition-duration: 0.3s; 
     -moz-transition-duration: 0.3s; 
     -0-transition-duration: 0.3s; 
-    -ms-transition-duration: 0.3s; 
-    transition-duration: 0.3s; 
+    -ms-transition-duration: 0.3s;  */
+    transition-duration: 1.5s; 
 }
 #fig1 a:hover, #fig1 a:focus {
-	background-color: red;
+	width: 20em;
 }
 	
 
