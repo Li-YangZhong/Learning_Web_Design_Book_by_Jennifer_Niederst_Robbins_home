@@ -345,7 +345,7 @@ p.tf {
 	padding: 100px;
 	/* outline: 1px dashed #ccc; */
 }
-#fig9 .img1, #fig9 .img2 {
+#fig9 .img1, #fig9 .img2 , #fig9 .img4{
 	position: absolute;
 	top: 0;
 	left:0;
@@ -356,11 +356,8 @@ p.tf {
 	opacity: .2;
 }
 #fig9 .img2 {
-  -webkit-transform: translate(90px, 60px);
-  -moz-transform: translate(90px, 60px);
-  -o-transform: translate(90px, 60px);
-  -ms-transform: translate(90px, 60px);
-  transform: translate(90px, 60px);
+
+  transform: translate(90px, 50px);
 }
 #fig9 .img4 {
   -webkit-transform: translate(-5%, -25%);
@@ -368,6 +365,7 @@ p.tf {
   -o-transform: translate(-5%, -25%);
   -ms-transform: translate(-5%, -25%);
   transform: translate(-5%, -25%);
+  /* transform: translate(-5%); */
 }
 /* end figure 18-9 */
 
@@ -493,6 +491,8 @@ p.tf {
 	-o-transform: scale(1.5) rotate(-5deg) translate(50px, 30px);
 	-ms-transform: scale(1.5) rotate(-5deg) translate(50px, 30px);
 	transform: scale(1.5) rotate(-5deg) translate(50px, 30px);
+	transform: scale(1.5) translate(50px, 30px) rotate(-5deg) ;
+	transform: translate(50px, 30px) rotate(-5deg) scale(1.5) ;
 	-webkit-transform-origin: left top;
 	-moz-transform-origin: left top;
 	-o-transform-origin: left top;
@@ -568,7 +568,7 @@ p.tf {
 /* FIGURE 18-15 */
 
 #fig15 {
-	clear: left;
+	/* clear: left; */
 }
 
 #fig15 ul {
@@ -631,7 +631,7 @@ p.tf {
 
 /* FIGURE 18-18 */
 
-@-webkit-keyframes colors {
+/* @-webkit-keyframes colors {
   0% { background-color: red; }
   20% { background-color: orange; }
   40% { background-color: yellow; }
@@ -663,6 +663,14 @@ p.tf {
   60% { background-color: green; }
   80% { background-color: blue; }
   100% { background-color: purple; }
+}  */
+@keyframes colors {
+  0% { background-color: red; }
+  20% { background-color: orange; }
+  40% { background-color: yellow; }
+  60% { background-color: green; }
+  80% { background-color: blue; }
+  100% { background-color: purple; }
 } 
 
 #fig18 div {
@@ -679,7 +687,7 @@ p.tf {
 	-moz-animation: colors 20s linear infinite alternate;
 	-o-animation: colors 20s linear infinite alternate;
 	-ms-animation: colors 20s linear infinite alternate;
-	animation: colors 20s linear infinite alternate;
+	animation: colors 5s linear infinite alternate;
 }
 
 /* end figure 18-18 */
@@ -704,4 +712,21 @@ p.tf {
 	-webkit-transform: rotateY(45deg);
 	transform: rotateY(45deg);
 }
-	
+@keyframes slide {
+	from { margin-left: 80%; background-color: red; }
+	to { margin-left: 0%; background-color: purple;}
+	}
+#slid-container {
+	margin-top: 1em;
+	width: 100%;
+	background-color: gray;
+}
+#slid {
+	text-align: center;
+	/* margin: 0 auto; */
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	animation: slide 5s linear infinite alternate;
+}
+
