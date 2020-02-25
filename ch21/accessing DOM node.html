@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="intro"></div>
+    <div id="top-div">
+        <p id="beginner">paragraph 1</p>
+        <p class="someParagraphs">paragraph 2</p>
+        <p class="someParagraphs" id="to-be-replaced">paragraph 3</p>
+    </div>
+
+    <img src="photo.jpg" alt="a picture of beard" id="lead-photo">
+
+    <div id="new-div"></div>
+
+    <div id="parent">
+        <div id="remove-me">
+            <p>Pssh, I never liked it here anyway.</p>
+        </div>
+    </div>
+
+    <script>
+        var foo = document
+            .getElementById("beginner")
+            .innerHTML;
+        console.log(foo)
+        console.log('---------')
+        var paragraphs = document.getElementsByTagName("p");
+        for (var i = 0; i < paragraphs.length; i++) {
+            console.log(paragraphs[i])
+        }
+        console.log('---------')
+        var someParagraphs = document.getElementsByClassName("someParagraphs");
+        for (var i = 0; i < someParagraphs.length; i++) {
+            console.log(someParagraphs[i])
+        }
+        console.log('---------')
+        var images = document.querySelectorAll('img')
+        console.log(images)
+        console.log('---------')
+        console.log(images[0].getAttribute('alt'))
+        images[0].setAttribute('src', 'newPhoto.jpg')
+
+        var introDiv = document.getElementsByClassName("intro");
+        introDiv[0].innerHTML = "<p>This is our intro text</p>";
+        introDiv[0].style.backgroundColor = 'lightblue'
+        introDiv[0].style.color = 'white'
+        introDiv[0].style.border = '2px solid pink'
+        introDiv[0].style.fontSize = '2em'
+        introDiv[0].style.borderRadius = '20px'
+        introDiv[0].style.textAlign = 'center'
+
+        images[0].style.border = introDiv[0].style.border
+
+        var newDiv = document.getElementById('new-div')
+        var newParagraph = document.createElement("p");
+        var newText = document.createTextNode("This is new text created.");
+        newParagraph.appendChild(newText)
+        newDiv.appendChild(newParagraph)
+
+        var newHeading = document.createElement("h1");
+        var headingText = document.createTextNode("A new heading");
+        newHeading.appendChild(headingText);
+        newDiv.insertBefore(newHeading, newParagraph)
+
+        var replacingParagraph = document.createElement('p')
+        var replacingText = document.createTextNode('this is text used for replacing other text.')
+        replacingParagraph.appendChild(replacingText)
+
+        var replacedParagraph = document.getElementById('to-be-replaced')
+        var topDiv = document.querySelectorAll('#top-div')
+        topDiv[0].replaceChild(replacingParagraph, replacedParagraph)
+
+        var parentDiv = document.getElementById("parent");
+        var removeMe = document.getElementById("remove-me");
+        parentDiv.removeChild( removeMe );
+
+
+    </script>
+    <!-- a comment -->
+</body>
+
+</html>
