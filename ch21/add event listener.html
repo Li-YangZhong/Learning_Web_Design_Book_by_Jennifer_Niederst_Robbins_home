@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+
+        function myFunction() {
+            alert('body element clicked')
+            console.log('body element clicked')
+        }
+
+        window.onkeydown = function () {
+            alert('a key is pressed down')
+        };
+
+        window.addEventListener("mouseover", function (e) {
+            alert('mouse is on the page')
+            console.log(e)
+        });
+    </script>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: blue;
+            border: 1px solid #000;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body onclick="myFunction();">
+    <!-- /* myFunction will now run when the user
+        clicks anything within 'body' */ -->
+    <p>HELLOW WORLD</p>
+</body>
+
+</html>

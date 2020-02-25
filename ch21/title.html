@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Million Dollar WebApp</title>
 </head>
@@ -7,7 +8,13 @@
 <body>
 
 	<script>
-		// Your code goes here!
+		var originalTitle = document.title;
+		function showUnreadCount(unread) {
+			document.title = originalTitle + " (" + unread + " new messages!)";
+		}
+
+		showUnreadCount(3);
 	</script>
 </body>
+
 </html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*     var foo;
+            alert(foo); */
+
+        /*     var foo = null;
+    alert(foo); */
+
+        /* var foo = 5;
+        
+        alert(foo + foo); */
+
+        /* var foo = "bye"
+        alert(foo + foo); */
+
+        /* var foo = "5";
+        alert( foo + foo ); */
+
+        /* var foo = "five";
+        var bar = 5;
+        alert( foo + bar ); */
+
+        /* var foo = [5, "five", "5"];
+        
+        alert( foo[0] ); // Alerts "5"
+        alert( foo[1] ); // Alerts "five"
+        alert( foo[2] ); // Also alerts "5" */
+
+        /* alert( 5 == 5 ); // This will alert "true"
+        alert( 5 != 6 ); // This will alert "true"
+        alert( 5 < 1 ); // This will alert "false" */
+
+        /* alert( "5" == 5 ); 
+        alert( "5" === 5 );
+        alert( "5" !== 5 ); */
+
+        /* var foo = [5, "five", "5"];
+        if( foo[1] === "five" ) {
+        alert("This is the word five, written in plain English.");
+        } */
+
+        /*         if (1 != 2) {
+                    alert("If you're not seeing this alert, we have bigger problems than JavaScript.");
+        
+                } */
+
+        /*         var test = "testing";
+                if (test == "testing") {
+                    alert("You haven't changed anything.");
+                } else {
+                    alert("You've changed something!");
+                } */
+
+        /*         for( var i = 0; i < 2; i++ ) {
+        alert( i ); // This loop will trigger three alerts, reading "0",
+        
+        } */
+        /* var items = ["foo", "bar", "baz"]; // First we create an array.
+        for( var i = 0; i < items.length; i++ ) {
+        alert( items[i] ); // This will alert each item in the array.
+        } */
+
+        /* function withDelay () {
+            console.log('with delay')
+        }
+        console.log('without delay');
+        setTimeout(withDelay(), 5000) */
+
+        /* function foo() {
+        alert("Our function just ran!");
+        }
+        foo() */
+        /*     function alertArraySize(arr) {
+                alert(arr.length);
+            }
+            var test = [1, 2, 3, 4, 5];
+            alertArraySize(test); */
+        /*         function addNumbers(a, b) {
+                    return a + b;
+                }
+                alert(addNumbers(2, 5)); */
+        /* 
+        function addNumbers(a, b) {
+             a + b;
+        }
+        alert(addNumbers(2, 5)); */
+
+/* 
+        function bar() {
+            return alert(3);
+            alert("We'll never see this alert.");
+        }
+
+        bar(); */
+
+        /* When you define a variable within a function and you want it to be
+used only by that function, you can flag it as locally scoped by preceding the
+variable name with the var keyword:
+var foo = "value"; */
+
+/* function localVar() {
+    var foo = "value";
+}
+
+localVar();
+
+console.log(foo) */
+
+/* To expose a variable within a function to the global scope, we omit the var
+keyword and simply define the variable */
+/* function globalVar() {
+    foo1 = "value";
+}
+
+globalVar()
+console.log(foo1) */
+
+/* function double( num ){
+total = num + num;
+return total;
+}
+var total = 10;
+var number = double( 20 );
+alert( total );  */
+
+function myFunction() {
+    alert('body element clicked')
+    console.log('body element clicked')
+}
+
+    </script> 
+</head>
+
+<body onclick="myFunction();">
+        <!-- /* myFunction will now run when the user
+        clicks anything within 'body' */ -->
+</body>
+
+</html>
